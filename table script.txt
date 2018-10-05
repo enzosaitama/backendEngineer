@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS `user_review`;
+
+CREATE TABLE IF NOT EXISTS `user_review` (
+	`id` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	`order_id` char(5),
+	`product_id` char(5),
+	`user_id` char(5),
+	`rating` float(3,2),
+	`created_at` DATETIME,
+	`update_at` DATETIME
+	);
